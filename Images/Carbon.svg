@@ -1,0 +1,110 @@
+<svg width="100%" height="100%" viewBox="0 0 220 220"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+     
+  <desc>
+    Animated Carbon Atom
+        
+    by Jay Nick
+    STEAMcoded.org
+  </desc>
+  
+  <defs>
+      <mask id="m7">
+        <rect width="100%" height="100%" style="fill:white" />
+        <circle cx="200" cy="193" r="4" style="fill:black" />
+      </mask>
+
+      <symbol id="proton">
+        <circle cx="200" cy="200" r="4" style="fill:red;stroke:#999;stroke-width:0.25px;"/>
+      </symbol>
+      <symbol id="neutron">
+        <circle cx="200" cy="200" r="4" style="fill:cyan;stroke:#999;stroke-width:0.25px;"/>
+      </symbol>
+
+      <symbol id="carbon" viewBox="0 0 220 220">
+        <g transform="translate(-290,-290) scale(2)">
+          <use id="p12" x="0" y="-7" xlink:href="#proton"/>
+          <use id="n12" x="0" y="-7" xlink:href="#neutron" transform="rotate(45,200,200)"/>
+          <use xlink:href="#p12" transform="rotate(90,200,200)"/>
+          <use xlink:href="#n12" transform="rotate(90,200,200)"/>
+          <use xlink:href="#p12" transform="rotate(180,200,200)"/>
+          <use xlink:href="#n12" transform="rotate(180,200,200)"/>
+          <g style="mask:url(#m7);">
+            <use xlink:href="#p12" transform="rotate(270,200,200)"/>
+            <use xlink:href="#n12" transform="rotate(270,200,200)"/>
+          </g>
+          <use x="-2.5" y="-2.5" xlink:href="#proton"/>
+          <use x="-2.5" y="2.5" xlink:href="#neutron"/>
+          <use x="2.5" y="2.5" xlink:href="#proton"/>
+          <use x="2.5" y="-2.5" xlink:href="#neutron"/>
+        </g>
+        
+        <g transform="translate(-190,-190)">
+
+          <g id="s1" class="show" style="fill:none;">
+            <path id="ps1" d="M270,300A30,30,0,0,1,330,300A30,30,0,0,1,270,300" style="stroke:#666;stroke-dasharray:2,5;"/>
+      
+            <g id="e1" class="show" transform="rotate(0,300,300)">
+              <circle r="4" style="fill:#999;">
+                <animateMotion id="a1" dur="0.65s" repeatCount="indefinite">
+                  <mpath xlink:href="#ps1"/>
+                </animateMotion>
+              </circle>
+            </g>
+            <g id="e2" class="show" transform="rotate(180,300,300)">
+              <circle r="4" style="fill:#999;">
+                <animateMotion id="a2" dur="0.65s" repeatCount="indefinite">
+                  <mpath xlink:href="#ps1"/>
+                </animateMotion>
+              </circle>
+            </g>
+          </g>
+      
+          <g id="s2" class="show" style="fill:none;">
+            <path id="ps2" d="M260,260A40,40,0,0,1,340,340A40,40,0,0,1,260,260" style="stroke:#666;stroke-dasharray:2,5;"/>
+      
+            <g id="e3" class="show" transform="rotate(0,300,300)">
+              <circle r="4" style="fill:#999;">
+                <animateMotion id="a3" dur="0.9s" repeatCount="indefinite">
+                  <mpath xlink:href="#ps2"/>
+                </animateMotion>
+              </circle>
+            </g>
+            <g id="e4" class="show" transform="rotate(180,300,300)">
+              <circle r="4" style="fill:#999;">
+                <animateMotion id="a4" dur="0.9s" repeatCount="indefinite">
+                  <mpath xlink:href="#ps2"/>
+                </animateMotion>
+              </circle>
+            </g>
+          </g>
+    
+          <g id="p2" class="show" style="fill:none;">
+            <path id="pp2-1" d="M260,300A40,100,0,0,1,340,300A40,100,0,0,1,260,300" style="stroke:#666;stroke-dasharray:2,5;"/>
+            <g id="e5" class="show" transform="rotate(0,300,300)">
+              <circle r="4" style="fill:#999;">
+                <animateMotion id="a5" dur="1s" repeatCount="indefinite">
+                  <mpath xlink:href="#pp2-1"/>
+                </animateMotion>
+              </circle>
+            </g>
+
+            <path id="pp2-2" d="M260,300A40,100,0,0,1,340,300A40,100,0,0,1,260,300" style="stroke:#666;stroke-dasharray:2,5;" transform="rotate(60,300,300)"/>
+            <g id="e8" class="hide" transform="rotate(240,300,300)">
+              <animate attributeType="XML" attributeName="class" values="hide;hide;show" dur="3s" repeatCount="indefinite" />
+              <circle r="4" style="fill:#999;">
+                <animateMotion id="a8" dur="1.1s" repeatCount="indefinite">
+                  <mpath xlink:href="#pp2-2"/>
+                </animateMotion>
+              </circle>
+            </g>
+
+            <path id="pp2-3" d="M260,300A40,100,0,0,1,340,300A40,100,0,0,1,260,300" style="stroke:#666;stroke-dasharray:2,5;" transform="rotate(120,300,300)"/>
+          </g>
+        </g>
+      </symbol>
+  </defs>
+
+  <use width="220" height="220" xlink:href="#carbon" style="stroke-width:0.5px;" />
+</svg>

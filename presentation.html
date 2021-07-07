@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+        <!-- <link rel="stylesheet" href="dist/theme/black.css" id="theme"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/sky.css" id="theme"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/night.css" id="theme"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/moon.css" id="theme"> -->
+		<link rel="stylesheet" href="dist/theme/league.css" id="theme">
+		<!-- <link rel="stylesheet" href="dist/theme/blood.css" id="theme"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+                    <h2>Extending Shannon's Ionic Radii Database Using Machine Learning</h2>
+					<a>
+						<img src="Images/Carbon.svg" alt="reveal.js logo" style="height: 280px; margin: 0 auto 4rem auto; background: transparent;">
+                    </a>
+                    <h4>Jason Tam</h4>
+                    <h4>AI Reading Group 2021-07-08</h4>
+				</section>
+
+				<section>
+                    <h2>Ionic Radius - I</h2>
+					<ul style="position: absolute; top: 100%; left: 0px; width: 500px">
+						<li style="margin-bottom: 10px">Radius of monatomic ion in an ionic crystalline structure</li>
+						<li style="margin-bottom: 10px">$r_{cation}^{+}$ + $r_{anion}^{-}$ gives distance between nuclei</li>
+						<li style="margin-bottom: 10px">$pm$ ($10^{-12}$) or Å ($10^{-10}$)</li>
+						<li style="margin-bottom: 10px">Range from 31$pm$ to 200$pm$</li>
+					</ul>
+					<a style="position: absolute;top: 100%; left: 600px;">
+						<img src="Images/Ionlattice-fcc.svg" alt="reveal.js logo" style="height: 380px; margin: 0 auto 4rem auto; background: transparent;">
+					</a>
+				</section>
+
+				<section>
+                    <h2>Ionic Radius - II</h2>
+                    <div  style="position: absolute;top: 120%; left: -50px; width: 550px; font-size:30px">
+                        <ul>
+                            <li style="margin-bottom: 10px">Values depend on:
+                                <ul>
+                                    <li>Oxidation State (OS)</li>
+                                    <li>Coordination Number (CN)</li>
+                                    <li>Orbital Configurations (OC)</li>
+                                </ul>
+                            </li>
+                            <li style="margin-bottom: 10px">Changes physical and chemical properties</li>
+                            <li style="margin-bottom: 10px">Very useful for scintillators</li>
+                        </ul>                          
+                    </div>
+					<a style="position: absolute;top: 120%; left: 450px;">
+						<img src="Images/scintillators.png" alt="reveal.js logo" style="height: 350px; margin: 0 auto 4rem auto; background: transparent;">
+					</a>
+				</section>
+
+				<section>
+                    <h2>Measurements</h2>
+                    <ul style="position: absolute;top: 130%; left: -50px; width: 500px; font-size:30px">
+                        <li style="margin-bottom: 10px">X-ray Crystallography (1912-)
+                            <ul>
+                                <li>Reconstruct structure from diffraction patterns</li>
+                            </ul>
+                        </li>
+                        <li style="margin-bottom: 10px">Landé (1920) found effective method with Lithium Iodide</li>
+                        <li style="margin-bottom: 10px">Shannon performed major review (1976)</li>
+                    </ul>     
+					<a style="position: absolute;top: 100%; left: 500px;">
+                        <!-- <img src="Images/1280px-Freezed_XRD.jpg" style="height: 380px;"> -->
+                        <img src="Images/Lil.png" style="height: 380px;">
+					</a> 
+				</section>
+
+				<section>
+                    <h2>Machine Learning Modelling</h2>
+					<a>
+						<img src="Images/featuresLabel.png">
+                    </a>
+                    <ul style="position: absolute;top: 100%; left: -50px; width: 500px">
+                        <li>Linear Regression</li>
+                        <li>Support Vector Machines</li>
+                        <li>Decision Trees</li>
+                    </ul>     
+                    <ul style="position: absolute;top: 100%; left: 500px; width: 500px">
+                        <li>Ensemble of Decision Trees</li>
+                        <li style="color: yellow;">Gaussian Process Regression (GPR)</li>
+                    </ul>    
+				</section>
+
+				<section>
+                    <h2>Gaussian Process Regression</h2>
+					<a>
+						<img src="Images/GPR.png">
+                    </a>
+				</section>
+
+				<section>
+                    <h2>Results</h2>
+                    <ul style="position: absolute;top: 200%; left: -50px; width: 500px">
+                        <li style="margin-bottom: 10px">GPR returned very good results</li>
+                        <li style="margin-bottom: 10px">$R^{2} = 0.993$</li>
+                        <li style="margin-bottom: 10px">$RMSE = 0.0332$Å</li>
+                    </ul>     
+					<a style="position: absolute;top: 100%; left: 500px; width: 500px">
+						<img src="Images/correlation.png" style="height: 480px;">
+					</a>
+				</section>
+
+				<section>
+                    <h2>Extention to Missing Ions</h2>
+					<a>
+						<img src="Images/chart.png" style="height: 380px; width: 1000px;">
+					</a>
+				</section>
+
+				<section>
+                    <h2>Thank you for your attention</h2>
+                    <div style="position: absolute;top: 50%; left: -20px;">
+                        <a>
+                            <img src="Images/bcc.svg" style="height: 300px;">
+                        </a>
+                        <h4>Body Centered</h4>
+                        <h4>Cubic</h4>
+                    </div>
+                    <div style="position: absolute;top: 50%; left: 230px;">
+                        <a>
+                            <img src="Images/fcc.svg" style="height: 300px;">
+                        </a>
+                        <h4>Face Centered</h4>
+                        <h4>Cubic</h4>
+                    </div>
+                    <div style="position: absolute;top: 50%; left: 480px;">
+                        <a>
+                            <img src="Images/Diamond_crystal_lattice.svg" style="height: 300px;">
+                        </a>
+                        <h4>Diamond</h4>
+                    </div>
+                    <div style="position: absolute;top: 70%; left: 780px;">
+                        <a>
+                            <img src="Images/hex.png" style="height: 250px;">
+                        </a>
+                        <h4 style="position: absolute;top: 108%; left: 25px;">Hexagonal</h4>
+                    </div>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/math/math.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+                hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath ]
+			});
+
+		</script>
+
+	</body>
+</html>
